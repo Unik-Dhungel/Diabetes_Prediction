@@ -9,31 +9,57 @@ Records: 70,692<br>
 Features: 22 columns (including demographics, health status, lifestyle, etc.)<br><br>
 
 Feature Overview
-| Feature | Description |<br>
-|---------|-------------|<br>
-| Diabetes_binary | 0 = No diabetes, 1 = Prediabetes or diabetes |<br>
-| HighBP | 0 = No high blood pressure, 1 = High blood pressure |<br>
-| HighChol | 0 = No high cholesterol, 1 = High cholesterol |<br>
-| CholCheck | 0 = No cholesterol check in last 5 years, 1 = Yes |<br>
-| BMI | Body Mass Index |<br>
-| Smoker | 0 = No, 1 = Yes (smoked ≥100 cigarettes in lifetime) |<br>
-| Stroke | 0 = No, 1 = Yes |<br>
-| HeartDiseaseorAttack | 0 = No, 1 = Yes (coronary heart disease or heart attack) |<br>
-| PhysActivity | 0 = No, 1 = Yes (physical activity in past 30 days) |<br>
-| Fruits | 0 = No, 1 = Yes (consume fruit ≥1 time/day) |<br>
-| Veggies | 0 = No, 1 = Yes (consume vegetables ≥1 time/day) |<br>
-| HvyAlcoholConsump | 0 = No, 1 = Yes (men ≥14 drinks/week, women ≥7 drinks/week) |<br>
-| AnyHealthcare | 0 = No, 1 = Yes (any health coverage) |<br>
-| NoDocbcCost | 0 = No, 1 = Yes (could not see doctor due to cost in past 12 months) |<br>
-| GenHlth | 1 = Excellent, 5 = Poor (general health rating) |<br>
-| MentHlth | Days of poor mental health (1–30) |<br>
-| PhysHlth | Days of physical illness/injury (1–30) |<br>
-| DiffWalk | 0 = No, 1 = Yes (difficulty walking/climbing stairs) |<br>
-| Sex | 0 = Female, 1 = Male |<br>
-| Age | 1 = 18–24, 13 = 80+ (13-level age category) |<br>
-| Education | 1 = Kindergarten or less, 6 = College graduate |<br>
-| Income | 1 = < $35,000, 8 = $75,000+ |<br><br>
+<br>
+#### <span style="color:#89CFF0">Dataset Used</span>
 
+The dataset used in this project is the clean dataset of 70692 survey responses to the CDC BRFSS2015. 
+
+This dataset contains 22 feature columns:
+1. Diabetes_binary:
+0 = no diabetes 1 = prediabetes or diabetes
+2. HighBP:
+0 = no high BP 1 = high BP
+3. HighChol:
+0 = no high cholesterol 1 = high cholesterol
+4. CholCheck:
+0 = no cholesterol check in 5 years 1 = yes cholesterol check in 5 years
+5. BMI:
+Body Mass Index
+6. Smoker:
+Have you smoked at least 100 cigarettes in your entire life? 
+[Note: 5 packs = 100 cigarettes] 0 = no 1 = yes
+7. Stroke:
+(Ever told) you had a stroke. 0 = no 1 = yes
+8. Heartdisease or attack:
+coronary heart disease (CHD) or myocardial infarction (MI) 0 = no 1 = yes
+9. PhysActivity:
+physical activity in past 30 days - not including job 0 = no 1 = yes
+10. Fruits:
+Consume Fruit 1 or more times per day 0 = no 1 = yes
+11. Veggies:
+Consume Vegetables 1 or more times per day 0 = no 1 = yes
+12. HvyAlcoholConsump:
+(adult men >=14 drinks per week and adult women>=7 drinks per week) 0 = no 1 = yes
+13. AnyHealthcare:
+Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no 1 = yes
+14. NoDocbcCost:
+Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 = no 1 = yes
+15. GenHlth:
+Would you say that in general your health is: scale 1-5 1 = excellent 2 = very good 3 = good 4 = fair 5 = poor
+16. MentHlth:
+days of poor mental health scale 1-30 days
+17. PhysHlth:
+physical illness or injury days in past 30 days scale 1-30
+18. DiffWalk:
+Do you have serious difficulty walking or climbing stairs? 0 = no 1 = yes
+19. Sex:
+0 = female 1 = male
+20. Age:
+level age category  1 = 18-24 9 = 60-64 13 = 80 or older
+21. Education:
+Education level  scale 1-6 1 = Never attended school or only kindergarten 2 = elementary etc.
+22. Income:
+Income scale  scale 1-8 1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more
 Data Preparation
 
 Duplicates: 1,635 duplicate rows were removed.<br>
