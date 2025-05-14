@@ -1,6 +1,6 @@
 # Diabetes_Prediction
 
-Objective
+Objective<br>
 This project aims to predict whether individuals are at risk of diabetes using survey data from the CDC BRFSS2015 dataset. The analysis includes data wrangling, exploratory data analysis (EDA), outlier handling, and feature relationship exploration.
 
 Dataset
